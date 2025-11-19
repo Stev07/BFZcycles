@@ -40,11 +40,10 @@
 
                 <nav class="hidden lg:flex items-center space-x-8">
                     <a href="#accueil" class="nav-link text-gray-700 hover:text-primary transition-colors font-medium">Accueil</a>
-                    <a href="#marques" class="nav-link text-gray-700 hover:text-primary transition-colors font-medium">Nos Marques</a>
-                    <a href="#catalogue" class="nav-link text-gray-700 hover:text-primary transition-colors font-medium">Vélos</a>
+                    <a href="#marques" class="nav-link text-gray-700 hover:text-primary transition-colors font-medium">Marques</a>
+                    <a href="catalogue.html" class="nav-link text-gray-700 hover:text-primary transition-colors font-medium">Catalogue</a>
                     <a href="#promotions" class="nav-link text-gray-700 hover:text-primary transition-colors font-medium">Promotions</a>
                     <a href="#services" class="nav-link text-gray-700 hover:text-primary transition-colors font-medium">Services</a>
-                    <a href="#magasin" class="nav-link text-gray-700 hover:text-primary transition-colors font-medium">Le Magasin</a>
                     <a href="#contact" class="nav-link text-gray-700 hover:text-primary transition-colors font-medium">Contact</a>
                 </nav>
 
@@ -89,11 +88,11 @@
                     </svg>
                     Nos Marques
                 </a>
-                <a href="#catalogue" class="mobile-nav-link flex items-center py-3 text-gray-700 hover:text-primary transition-colors">
+                <a href="catalogue.html" class="mobile-nav-link flex items-center py-3 text-gray-700 hover:text-primary transition-colors">
                     <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
                     </svg>
-                    Vélos
+                    Catalogue
                 </a>
                 <a href="#promotions" class="mobile-nav-link flex items-center py-3 text-gray-700 hover:text-primary transition-colors">
                     <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -142,8 +141,8 @@
     <main>
         <section id="accueil" class="hero relative min-h-screen flex items-center">
             <div class="absolute inset-0 z-0">
-                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Vélos haut de gamme" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
+                <img src="bikes/583095345_1397547245707602_4240447977461135071_n.jpg" alt="Vélo de route haut de gamme" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/75 to-black/50"></div>
             </div>
 
             <div class="container mx-auto px-4 relative z-10">
@@ -201,49 +200,91 @@
                     </p>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
-                    <div class="brand-card bg-light p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex items-center justify-center fade-in-up">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
+                    <a href="marque-ridley.html" class="brand-card bg-light p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center group fade-in-up cursor-pointer">
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-secondary mb-2">RIDLEY</div>
-                            <div class="text-sm text-gray-600">Route & VTT</div>
+                            <div class="text-3xl font-bold text-secondary mb-2 group-hover:text-primary transition-colors">RIDLEY</div>
+                            <div class="text-sm text-gray-600 mb-3">Route & VTT</div>
+                            <div class="text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                Découvrir
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <div class="brand-card bg-light p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex items-center justify-center fade-in-up delay-1">
+                    </a>
+                    <a href="marque-giant.html" class="brand-card bg-light p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center group fade-in-up delay-1 cursor-pointer">
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-secondary mb-2">GIANT</div>
-                            <div class="text-sm text-gray-600">Toutes disciplines</div>
+                            <div class="text-3xl font-bold text-secondary mb-2 group-hover:text-primary transition-colors">GIANT</div>
+                            <div class="text-sm text-gray-600 mb-3">Toutes disciplines</div>
+                            <div class="text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                Découvrir
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <div class="brand-card bg-light p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex items-center justify-center fade-in-up delay-2">
+                    </a>
+                    <a href="marque-pinarello.html" class="brand-card bg-light p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center group fade-in-up delay-2 cursor-pointer">
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-secondary mb-2">PINARELLO</div>
-                            <div class="text-sm text-gray-600">Vélos de route</div>
+                            <div class="text-3xl font-bold text-secondary mb-2 group-hover:text-primary transition-colors">PINARELLO</div>
+                            <div class="text-sm text-gray-600 mb-3">Vélos de route</div>
+                            <div class="text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                Découvrir
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <div class="brand-card bg-light p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex items-center justify-center fade-in-up delay-3">
+                    </a>
+                    <a href="marque-colnago.html" class="brand-card bg-light p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center group fade-in-up delay-3 cursor-pointer">
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-secondary mb-2">COLNAGO</div>
-                            <div class="text-sm text-gray-600">Prestige italien</div>
+                            <div class="text-3xl font-bold text-secondary mb-2 group-hover:text-primary transition-colors">COLNAGO</div>
+                            <div class="text-sm text-gray-600 mb-3">Prestige italien</div>
+                            <div class="text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                Découvrir
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <div class="brand-card bg-light p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex items-center justify-center fade-in-up delay-1">
+                    </a>
+                    <a href="marque-megamo.html" class="brand-card bg-light p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center group fade-in-up delay-1 cursor-pointer">
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-secondary mb-2">MEGAMO</div>
-                            <div class="text-sm text-gray-600">VTT & Cross</div>
+                            <div class="text-3xl font-bold text-secondary mb-2 group-hover:text-primary transition-colors">MEGAMO</div>
+                            <div class="text-sm text-gray-600 mb-3">VTT & Cross</div>
+                            <div class="text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                Découvrir
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <div class="brand-card bg-light p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex items-center justify-center fade-in-up delay-2">
+                    </a>
+                    <a href="marque-sunn.html" class="brand-card bg-light p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center group fade-in-up delay-2 cursor-pointer">
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-secondary mb-2">SUNN</div>
-                            <div class="text-sm text-gray-600">VTT français</div>
+                            <div class="text-3xl font-bold text-secondary mb-2 group-hover:text-primary transition-colors">SUNN</div>
+                            <div class="text-sm text-gray-600 mb-3">VTT français</div>
+                            <div class="text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                Découvrir
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <div class="brand-card bg-light p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex items-center justify-center fade-in-up delay-3">
+                    </a>
+                    <a href="marque-sensa.html" class="brand-card bg-light p-8 rounded-xl hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center group fade-in-up delay-3 cursor-pointer">
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-secondary mb-2">SENSA</div>
-                            <div class="text-sm text-gray-600">Route & Gravel</div>
+                            <div class="text-3xl font-bold text-secondary mb-2 group-hover:text-primary transition-colors">SENSA</div>
+                            <div class="text-sm text-gray-600 mb-3">Route & Gravel</div>
+                            <div class="text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                Découvrir
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="bg-light rounded-2xl p-8 md:p-12 fade-in-up">
@@ -266,152 +307,78 @@
             </div>
         </section>
 
-        <section id="catalogue" class="py-20 bg-light">
+        <section id="nouveautes" class="py-20 bg-light">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16 fade-in-up">
-                    <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-4">Notre Catalogue</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-4">Dernières Nouveautés</h2>
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Découvrez notre sélection de vélos haut de gamme pour toutes les pratiques
+                        Découvrez les derniers modèles arrivés en magasin
                     </p>
                 </div>
 
-                <div class="flex flex-wrap justify-center gap-4 mb-12 fade-in-up">
-                    <button class="filter-btn active px-6 py-3 rounded-lg font-medium transition-all" data-filter="all">Tous les vélos</button>
-                    <button class="filter-btn px-6 py-3 rounded-lg font-medium transition-all" data-filter="route">Vélos de route</button>
-                    <button class="filter-btn px-6 py-3 rounded-lg font-medium transition-all" data-filter="vtt">VTT</button>
-                    <button class="filter-btn px-6 py-3 rounded-lg font-medium transition-all" data-filter="gravel">Gravel</button>
-                    <button class="filter-btn px-6 py-3 rounded-lg font-medium transition-all" data-filter="triathlon">Triathlon</button>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bike-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 fade-in-up" data-category="route">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div class="bike-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 fade-in-up">
                         <div class="relative overflow-hidden group">
-                            <img src="https://images.pexels.com/photos/1595483/pexels-photo-1595483.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Vélo de route Pinarello" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Premium</div>
-                        </div>
-                        <div class="p-6">
-                            <div class="text-sm text-primary font-semibold mb-2">PINARELLO</div>
-                            <h3 class="text-2xl font-bold text-secondary mb-3">Dogma F</h3>
-                            <p class="text-gray-600 mb-4">Le summum de la performance pour les cyclistes exigeants. Utilisé par les pros du WorldTour.</p>
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="flex gap-2">
-                                    <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">Route</span>
-                                    <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">Carbone</span>
-                                </div>
-                            </div>
-                            <a href="produit-detail.html" class="block w-full text-center py-3 bg-secondary text-white rounded-lg hover:bg-dark transition-colors">
-                                Voir les détails
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="bike-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 fade-in-up delay-1" data-category="vtt">
-                        <div class="relative overflow-hidden group">
-                            <img src="https://images.pexels.com/photos/2834917/pexels-photo-2834917.jpeg?auto=compress&cs=tinysrgb&w=800" alt="VTT Giant" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <img src="bikes/583095345_1397547245707602_4240447977461135071_n.jpg" alt="Vélo de route" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
                             <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Nouveau</div>
                         </div>
                         <div class="p-6">
-                            <div class="text-sm text-primary font-semibold mb-2">GIANT</div>
-                            <h3 class="text-2xl font-bold text-secondary mb-3">Reign Advanced</h3>
-                            <p class="text-gray-600 mb-4">VTT enduro polyvalent avec suspension optimisée pour dévorer tous les terrains.</p>
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="flex gap-2">
-                                    <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">VTT</span>
-                                    <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">150mm</span>
-                                </div>
+                            <div class="text-sm text-primary font-semibold mb-2">VÉLO DE ROUTE</div>
+                            <h3 class="text-2xl font-bold text-secondary mb-3">Nouvelle Collection</h3>
+                            <p class="text-gray-600 mb-4">Performance et élégance pour les cyclistes exigeants.</p>
+                            <div class="flex gap-2 mb-4">
+                                <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">Route</span>
+                                <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">Performance</span>
                             </div>
-                            <a href="produit-detail.html" class="block w-full text-center py-3 bg-secondary text-white rounded-lg hover:bg-dark transition-colors">
+                            <a href="catalogue.html" class="block w-full text-center py-3 bg-secondary text-white rounded-lg hover:bg-dark transition-colors">
                                 Voir les détails
                             </a>
                         </div>
                     </div>
 
-                    <div class="bike-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 fade-in-up delay-2" data-category="route">
+                    <div class="bike-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 fade-in-up delay-1">
                         <div class="relative overflow-hidden group">
-                            <img src="https://images.pexels.com/photos/1266547/pexels-photo-1266547.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Vélo Ridley" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <img src="bikes/584272514_1401025848693075_4457140676809754162_n.jpg" alt="VTT" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Nouveau</div>
                         </div>
                         <div class="p-6">
-                            <div class="text-sm text-primary font-semibold mb-2">RIDLEY</div>
-                            <h3 class="text-2xl font-bold text-secondary mb-3">Helium SLX</h3>
-                            <p class="text-gray-600 mb-4">Vélo de route ultra-léger conçu pour la performance en montagne et sur parcours vallonné.</p>
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="flex gap-2">
-                                    <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">Route</span>
-                                    <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">6.8kg</span>
-                                </div>
+                            <div class="text-sm text-primary font-semibold mb-2">VTT</div>
+                            <h3 class="text-2xl font-bold text-secondary mb-3">Nouvelle Gamme</h3>
+                            <p class="text-gray-600 mb-4">Technologie de pointe pour conquérir tous les terrains.</p>
+                            <div class="flex gap-2 mb-4">
+                                <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">VTT</span>
+                                <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">Tout terrain</span>
                             </div>
-                            <a href="produit-detail.html" class="block w-full text-center py-3 bg-secondary text-white rounded-lg hover:bg-dark transition-colors">
+                            <a href="catalogue.html" class="block w-full text-center py-3 bg-secondary text-white rounded-lg hover:bg-dark transition-colors">
                                 Voir les détails
                             </a>
                         </div>
                     </div>
 
-                    <div class="bike-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 fade-in-up" data-category="gravel">
+                    <div class="bike-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 fade-in-up delay-2">
                         <div class="relative overflow-hidden group">
-                            <img src="https://images.pexels.com/photos/1431117/pexels-photo-1431117.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Gravel Sensa" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <img src="bikes/585101844_1400908578704802_3560298712492735016_n.jpg" alt="Vélo électrique" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Nouveau</div>
                         </div>
                         <div class="p-6">
-                            <div class="text-sm text-primary font-semibold mb-2">SENSA</div>
-                            <h3 class="text-2xl font-bold text-secondary mb-3">Giulia Gravel</h3>
-                            <p class="text-gray-600 mb-4">Le compagnon idéal pour l'aventure sur routes et chemins. Polyvalence et confort maximaux.</p>
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="flex gap-2">
-                                    <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">Gravel</span>
-                                    <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">Aventure</span>
-                                </div>
+                            <div class="text-sm text-primary font-semibold mb-2">VÉLO ÉLECTRIQUE</div>
+                            <h3 class="text-2xl font-bold text-secondary mb-3">Assistance Premium</h3>
+                            <p class="text-gray-600 mb-4">L'alliance parfaite entre confort et performance.</p>
+                            <div class="flex gap-2 mb-4">
+                                <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">E-Bike</span>
+                                <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">Premium</span>
                             </div>
-                            <a href="produit-detail.html" class="block w-full text-center py-3 bg-secondary text-white rounded-lg hover:bg-dark transition-colors">
-                                Voir les détails
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="bike-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 fade-in-up delay-1" data-category="triathlon">
-                        <div class="relative overflow-hidden group">
-                            <img src="https://images.pexels.com/photos/221291/pexels-photo-221291.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Vélo triathlon Ridley" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Aéro</div>
-                        </div>
-                        <div class="p-6">
-                            <div class="text-sm text-primary font-semibold mb-2">RIDLEY</div>
-                            <h3 class="text-2xl font-bold text-secondary mb-3">Dean Fast</h3>
-                            <p class="text-gray-600 mb-4">Vélo contre-la-montre et triathlon. Aérodynamisme extrême pour gagner chaque seconde.</p>
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="flex gap-2">
-                                    <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">Triathlon</span>
-                                    <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">CLM</span>
-                                </div>
-                            </div>
-                            <a href="produit-detail.html" class="block w-full text-center py-3 bg-secondary text-white rounded-lg hover:bg-dark transition-colors">
-                                Voir les détails
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="bike-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 fade-in-up delay-2" data-category="vtt">
-                        <div class="relative overflow-hidden group">
-                            <img src="https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg?auto=compress&cs=tinysrgb&w=800" alt="VTT Megamo" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                        <div class="p-6">
-                            <div class="text-sm text-primary font-semibold mb-2">MEGAMO</div>
-                            <h3 class="text-2xl font-bold text-secondary mb-3">Track Elite</h3>
-                            <p class="text-gray-600 mb-4">VTT cross-country race pour les compétiteurs recherchant légèreté et réactivité.</p>
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="flex gap-2">
-                                    <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">XC</span>
-                                    <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">Compétition</span>
-                                </div>
-                            </div>
-                            <a href="produit-detail.html" class="block w-full text-center py-3 bg-secondary text-white rounded-lg hover:bg-dark transition-colors">
+                            <a href="catalogue.html" class="block w-full text-center py-3 bg-secondary text-white rounded-lg hover:bg-dark transition-colors">
                                 Voir les détails
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="text-center mt-12 fade-in-up">
-                    <p class="text-gray-600 mb-4">De nombreux autres modèles disponibles en magasin</p>
-                    <a href="#contact" class="btn-primary inline-flex items-center">
-                        Contactez-nous pour plus d'informations
+                <div class="text-center fade-in-up">
+                    <p class="text-gray-600 mb-6 text-lg">Plus de 50 modèles disponibles en magasin et sur commande</p>
+                    <a href="catalogue.html" class="btn-primary inline-flex items-center text-lg px-8 py-4">
+                        Découvrir tout le catalogue
                         <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
                         </svg>
@@ -423,83 +390,202 @@
         <section id="promotions" class="py-20 bg-white">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16 fade-in-up">
-                    <div class="inline-block bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">Offres Spéciales</div>
-                    <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-4">Promotions en Cours</h2>
+                    <div class="inline-block bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold mb-4 animate-pulse">🔥 Offres Limitées</div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-4">Vélos en Promotion</h2>
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Profitez de nos offres exceptionnelles sur une sélection de vélos et accessoires
+                        Dernières unités disponibles à prix réduits - Stocks très limités
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                    <div class="promo-card bg-gradient-to-br from-primary to-accent rounded-2xl overflow-hidden shadow-xl fade-in-up">
-                        <div class="p-8 text-white">
-                            <div class="text-sm font-semibold mb-2">Jusqu'à</div>
-                            <div class="text-6xl font-bold mb-4">-30%</div>
-                            <h3 class="text-2xl font-bold mb-3">Fin de Série 2024</h3>
-                            <p class="mb-6 text-white/90">
-                                Profitez de réductions exceptionnelles sur nos vélos de route et VTT millésime 2024. Stocks limités.
-                            </p>
-                            <ul class="space-y-2 mb-6 text-white/90">
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <div class="promo-bike-card bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 fade-in-up border-2 border-primary/20">
+                        <div class="relative">
+                            <img src="bikes/585391045_1400908318704828_6669480346143639384_n.jpg" alt="Megamo Pulse" class="w-full h-64 object-cover">
+                            <div class="absolute top-4 left-4 bg-primary text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                                -30%
+                            </div>
+                            <div class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-xs font-semibold animate-pulse">
+                                ⚡ Dernière unité
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-sm text-primary font-semibold mb-2">MEGAMO</div>
+                            <h3 class="text-2xl font-bold text-secondary mb-3">Pulse 29" - Taille S</h3>
+                            <p class="text-gray-600 mb-4">VTT XC semi-rigide, parfait pour la compétition et les sorties sportives.</p>
+
+                            <div class="flex items-baseline gap-3 mb-4">
+                                <span class="text-3xl font-bold text-primary">2.099€</span>
+                                <span class="text-xl text-gray-400 line-through">2.999€</span>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">Taille S</span>
+                                <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">29"</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">1 en stock</span>
+                            </div>
+
+                            <ul class="space-y-2 mb-6 text-sm">
+                                <li class="flex items-center text-gray-600">
+                                    <svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
-                                    Vélos neufs avec garantie complète
+                                    Garantie constructeur 2 ans
                                 </li>
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <li class="flex items-center text-gray-600">
+                                    <svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
-                                    Montage et réglages inclus
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    Possibilité de financement
+                                    Montage & réglages offerts
                                 </li>
                             </ul>
-                            <a href="#contact" class="inline-flex items-center px-6 py-3 bg-white text-primary rounded-lg hover:bg-light transition-colors font-semibold">
-                                Voir les vélos en promo
-                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-                                </svg>
+
+                            <a href="#contact" class="block w-full text-center py-3 bg-primary text-white rounded-lg hover:bg-accent transition-colors font-semibold">
+                                Réserver ce vélo
                             </a>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 gap-6 fade-in-up delay-1">
-                        <div class="bg-light rounded-xl p-6 flex items-center gap-6 hover:shadow-lg transition-shadow">
-                            <div class="flex-shrink-0 w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                                -15%
+                    <div class="promo-bike-card bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 fade-in-up delay-1 border-2 border-primary/20">
+                        <div class="relative">
+                            <img src="bikes/586218257_1401846705277656_4528022603117987983_n.jpg" alt="Ridley Fenix" class="w-full h-64 object-cover">
+                            <div class="absolute top-4 left-4 bg-primary text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                                -25%
                             </div>
-                            <div class="flex-1">
-                                <h4 class="text-xl font-bold text-secondary mb-2">Accessoires & Équipements</h4>
-                                <p class="text-gray-600">Casques, cuissards, maillots et accessoires de nos marques partenaires</p>
+                            <div class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-xs font-semibold">
+                                2 disponibles
                             </div>
                         </div>
+                        <div class="p-6">
+                            <div class="text-sm text-primary font-semibold mb-2">RIDLEY</div>
+                            <h3 class="text-2xl font-bold text-secondary mb-3">Fenix SL Disc - Taille M</h3>
+                            <p class="text-gray-600 mb-4">Vélo de route endurance avec freins à disque, confort et performance.</p>
 
-                        <div class="bg-light rounded-xl p-6 flex items-center gap-6 hover:shadow-lg transition-shadow">
-                            <div class="flex-shrink-0 w-20 h-20 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                            <div class="flex items-baseline gap-3 mb-4">
+                                <span class="text-3xl font-bold text-primary">2.699€</span>
+                                <span class="text-xl text-gray-400 line-through">3.599€</span>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">Taille M</span>
+                                <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">Disc</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">2 en stock</span>
+                            </div>
+
+                            <ul class="space-y-2 mb-6 text-sm">
+                                <li class="flex items-center text-gray-600">
+                                    <svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Garantie constructeur 2 ans
+                                </li>
+                                <li class="flex items-center text-gray-600">
+                                    <svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Montage & réglages offerts
+                                </li>
+                            </ul>
+
+                            <a href="#contact" class="block w-full text-center py-3 bg-primary text-white rounded-lg hover:bg-accent transition-colors font-semibold">
+                                Réserver ce vélo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="promo-bike-card bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 fade-in-up delay-2 border-2 border-primary/20">
+                        <div class="relative">
+                            <img src="bikes/584272514_1401025848693075_4457140676809754162_n.jpg" alt="Giant Trance" class="w-full h-64 object-cover">
+                            <div class="absolute top-4 left-4 bg-primary text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                                 -20%
                             </div>
-                            <div class="flex-1">
-                                <h4 class="text-xl font-bold text-secondary mb-2">Entretien & Services</h4>
-                                <p class="text-gray-600">Révision complète et forfaits d'entretien à prix réduits</p>
+                            <div class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-xs font-semibold">
+                                3 disponibles
                             </div>
                         </div>
+                        <div class="p-6">
+                            <div class="text-sm text-primary font-semibold mb-2">GIANT</div>
+                            <h3 class="text-2xl font-bold text-secondary mb-3">Trance X 29 - Taille L</h3>
+                            <p class="text-gray-600 mb-4">VTT All-Mountain polyvalent, 140mm de débattement avant et arrière.</p>
 
-                        <div class="bg-gradient-to-r from-secondary to-gray-800 rounded-xl p-6 text-white">
-                            <div class="flex items-center gap-3 mb-3">
-                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
-                                <h4 class="text-xl font-bold">Financement Disponible</h4>
+                            <div class="flex items-baseline gap-3 mb-4">
+                                <span class="text-3xl font-bold text-primary">2.799€</span>
+                                <span class="text-xl text-gray-400 line-through">3.499€</span>
                             </div>
-                            <p class="text-white/90">
-                                Financez votre vélo en plusieurs fois sans frais. Demandez-nous les conditions en magasin.
-                            </p>
+
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">Taille L</span>
+                                <span class="px-3 py-1 bg-light text-gray-700 rounded-full text-sm">140mm</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">3 en stock</span>
+                            </div>
+
+                            <ul class="space-y-2 mb-6 text-sm">
+                                <li class="flex items-center text-gray-600">
+                                    <svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Garantie constructeur 2 ans
+                                </li>
+                                <li class="flex items-center text-gray-600">
+                                    <svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Montage & réglages offerts
+                                </li>
+                            </ul>
+
+                            <a href="#contact" class="block w-full text-center py-3 bg-primary text-white rounded-lg hover:bg-accent transition-colors font-semibold">
+                                Réserver ce vélo
+                            </a>
                         </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                    <div class="bg-gradient-to-br from-secondary to-gray-800 rounded-xl p-8 text-white fade-in-up">
+                        <div class="flex items-center gap-3 mb-4">
+                            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <h3 class="text-2xl font-bold">Financement Disponible</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">
+                            Payez en plusieurs fois sans frais. Exemple : <strong>Giant Trance à partir de 233€/mois</strong> sur 12 mois.
+                        </p>
+                        <a href="#contact" class="inline-flex items-center text-primary hover:text-white transition-colors font-semibold">
+                            Simuler mon financement
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="bg-light rounded-xl p-8 fade-in-up delay-1">
+                        <div class="flex items-center gap-3 mb-4">
+                            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                            <h3 class="text-2xl font-bold text-secondary">Garanties Incluses</h3>
+                        </div>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Vélos neufs avec garantie constructeur complète
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Montage professionnel et réglages précis offerts
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Première révision gratuite après 3 mois
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -777,7 +863,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
                     <div class="fade-in-up">
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-                            <img src="https://images.pexels.com/photos/7662943/pexels-photo-7662943.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Magasin BFZ Cycles" class="w-full h-96 object-cover">
+                            <img src="482244943_1177400594388936_442735811813983094_n.jpg" alt="Magasin BFZ Cycles Eghezée" class="w-full h-96 object-cover">
                         </div>
                     </div>
 

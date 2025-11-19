@@ -159,33 +159,58 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    const filterButtons = document.querySelectorAll('.filter-btn');
+    const categoryButtons = document.querySelectorAll('.filter-btn');
+    const brandButtons = document.querySelectorAll('.brand-filter-btn');
     const bikeCards = document.querySelectorAll('.bike-card');
 
-    filterButtons.forEach(button => {
+    let activeCategory = 'all';
+    let activeBrand = 'all';
+
+    function applyFilters() {
+        bikeCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            const brand = card.getAttribute('data-brand');
+
+            const categoryMatch = activeCategory === 'all' || category === activeCategory;
+            const brandMatch = activeBrand === 'all' || brand === activeBrand;
+
+            if (categoryMatch && brandMatch) {
+                card.classList.remove('hidden');
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 10);
+            } else {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.classList.add('hidden');
+                }, 300);
+            }
+        });
+    }
+
+    categoryButtons.forEach(button => {
         button.addEventListener('click', function() {
             const filter = this.getAttribute('data-filter');
+            activeCategory = filter;
 
-            filterButtons.forEach(btn => btn.classList.remove('active'));
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
 
-            bikeCards.forEach(card => {
-                const category = card.getAttribute('data-category');
+            applyFilters();
+        });
+    });
 
-                if (filter === 'all' || category === filter) {
-                    card.classList.remove('hidden');
-                    setTimeout(() => {
-                        card.style.opacity = '1';
-                        card.style.transform = 'translateY(0)';
-                    }, 10);
-                } else {
-                    card.style.opacity = '0';
-                    card.style.transform = 'translateY(20px)';
-                    setTimeout(() => {
-                        card.classList.add('hidden');
-                    }, 300);
-                }
-            });
+    brandButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const brand = this.getAttribute('data-brand');
+            activeBrand = brand;
+
+            brandButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            applyFilters();
         });
     });
 
