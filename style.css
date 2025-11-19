@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CC0000;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8B0000;
+}
+
+#header {
+    transition: all 0.3s ease;
+}
+
+#header.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#header.scrolled .container {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #CC0000;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #CC0000;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background: #CC0000;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(204, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background: #8B0000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(204, 0, 0, 0.3);
+}
+
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #CC0000;
+    transform: translateY(-2px);
+}
+
+.hero {
+    position: relative;
+    padding-top: 80px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.fade-in.delay-1 {
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.fade-in.delay-2 {
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+.fade-in.delay-3 {
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-up.delay-1 {
+    transition-delay: 0.1s;
+}
+
+.fade-in-up.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.fade-in-up.delay-3 {
+    transition-delay: 0.3s;
+}
+
+.brand-card {
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.brand-card:hover {
+    transform: translateY(-8px);
+}
+
+.bike-card {
+    transition: all 0.3s ease;
+}
+
+.bike-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.promo-card {
+    transition: all 0.3s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+}
+
+.filter-btn {
+    background: white;
+    color: #1a1a1a;
+    border: 2px solid #e5e5e5;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    border-color: #CC0000;
+    color: #CC0000;
+}
+
+.filter-btn.active {
+    background: #CC0000;
+    color: white;
+    border-color: #CC0000;
+}
+
+#scroll-to-top {
+    transition: all 0.3s ease;
+}
+
+#scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#scroll-to-top:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes countUp {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.counter {
+    animation: countUp 0.5s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+.mobile-nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+    padding-left: 0.5rem;
+}
+
+#mobile-menu-overlay {
+    transition: opacity 0.3s ease;
+}
+
+#mobile-menu-overlay.active {
+    display: block;
+    animation: fadeInOverlay 0.3s ease forwards;
+}
+
+@keyframes fadeInOverlay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#mobile-menu.active {
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+.bike-card.hidden {
+    display: none;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+section {
+    position: relative;
+}
+
+.container {
+    transition: all 0.3s ease;
+}
